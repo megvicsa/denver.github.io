@@ -879,7 +879,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [ , ] //FILL OUT
+                            coordinates: [-104.7637864390239, 39.70475165782895]
                         }
                     }
                 ]
@@ -898,7 +898,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [ , ] // FILL OUT
+                            coordinates: [-105.22418624695493, 39.73630625750721]
                         }
                     }
                 ]
@@ -921,7 +921,7 @@
                 logData(`Map Clicked`, null, null, clickCoords, mapNum);
                 console.log(`Map clicked at: ${clickCoords}`);
 
-                const bufferRadius = 0.8; // Buffer radius in kilometers
+                const bufferRadius = 2; // Buffer radius in kilometers
 
                 if(!checkBufferZone(clickCoords, chargingStations[0].coordinates, bufferRadius) && !checkBufferZone(clickCoords, chargingStations[1].coordinates, bufferRadius)) {
                     removeRoutes();
